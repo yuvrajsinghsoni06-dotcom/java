@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <span class="logo">Expense Intelligence Tracker</span>
+            </div>
+            <div class="navbar-user">
+                <span class="user-name"><a href=#>Menu</a></span>
+            </div>
+            <div class="navbar-down">
+                <a href="#" id="settings-link">Settings</a>
+                <a href="#" id="logout-link">Logout</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+            <ul>
+                <li class="active-dashboard">Dashboard</li>
+                <li class="transaction">Transaction</li>
+                <li class="Analytics">Analytics</li>
+                <li class="report">Report</li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <main class="dashboard-main">
+                <section class="summary-card">
+                    <div class="card">
+                        <h4>Total Expenses</h4>
+                        <p class="card-value" id="totalspent">0.00</p>
+                    </div>
+                    <div class="card">
+                        <h4>Budget</h4>
+                        <p class="card-value" id="budget">0.00</p>
+                    </div>
+                    <div class="card">
+                        <h4>Anomalies</h4>
+                        <p class="card-value" id="anomalies">0</p>
+                    </div>
+                    <div class="card">
+                        <h4>Top Category</h4>
+                        <p class="card-value" id="topcategory">--</p>
+                    </div>
+                </section>
+                <section class="chart">
+                    <div class="chart-container">
+                        <h3>Expense Overview</h3>
+                        <canvas id="categorypiechart"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <h3>Spending Trend</h3>
+                        <canvas id="trendingchart"></canvas>
+                    </div>
+                </section>
+                <section class="transactions-section">
+                <div class="section-header">
+                    <h3>Recent Transactions</h3>
+                    <button id="addTransactionBtn" class="btn-primary">+ Add Transaction</button>
+                </div>
+
+                <table class="transactions-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transactionbody">
+
+                    </tbody>
+                </table>
+                </section>
+            </main>
+        </div>
+    </div>
+    
+</body>
+</html>
