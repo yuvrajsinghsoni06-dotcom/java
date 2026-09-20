@@ -1,7 +1,7 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
 
         // System.out.println("Enter your Name: " );
         // System.out.println("Enter your Age: " );
@@ -37,32 +37,61 @@ public class Main {
 
         // MAd LAb Game
 
-        String adjective1;
-        String adjective2;
-        String adjective3;
-        String noun1;
-        String verb1;
+        // String adjective1;
+        // String adjective2;
+        // String adjective3;
+        // String noun1;
+        // String verb1;
 
 
-        System.out.println("Enter an adjective (description): ");
-        adjective1 = scanner.nextLine();
-        System.out.println("Enter a noun (person or animal): ");
-        noun1 = scanner.nextLine();
-        System.out.println("Enter an adjective (description): ");
-        adjective2 = scanner.nextLine();
-        System.out.println("Enter a verb ends with ing (action): ");
-        verb1 = scanner.nextLine();
-        System.out.println("Enter an adjective (description): ");
-        adjective3 = scanner.nextLine();
+        // System.out.println("Enter an adjective (description): ");
+        // adjective1 = scanner.nextLine();
+        // System.out.println("Enter a noun (person or animal): ");
+        // noun1 = scanner.nextLine();
+        // System.out.println("Enter an adjective (description): ");
+        // adjective2 = scanner.nextLine();
+        // System.out.println("Enter a verb ends with ing (action): ");
+        // verb1 = scanner.nextLine();
+        // System.out.println("Enter an adjective (description): ");
+        // adjective3 = scanner.nextLine();
 
 
-        System.out.println("Today I went To a " + adjective1 + " " + "Zoo");
-        System.out.println("In an exhibition ,i saw a " + noun1 + ".");
-        System.out.println(noun1 + "was" + adjective2 + "and" +  verb1 + "!");
-        System.out.println("I was  " + adjective3 + "!");
+        // System.out.println("Today I went To a " + adjective1 + " " + "Zoo");
+        // System.out.println("In an exhibition ,i saw a " + noun1 + ".");
+        // System.out.println(noun1 + "was" + adjective2 + "and" +  verb1 + "!");
+        // System.out.println("I was  " + adjective3 + "!");
 
  
-        scanner.close();
+        // scanner.close();
+
+        // int x = 10;
+        // int y = 20;
+        // int z;
+
+        // z = x + y;
+        // z = x - y;
+        // z = x * y;
+        // z = x / y;
+        // z = x % y;
+
+        // System.out.print(z);
+        
+        // Augmented Asxsignment operator
+        
+        // x = x + y;
+        // x += y;
+        // x *= y;
+        // x -= y;
+        // x /= y;
+
+        // order of operation [p-e-m-d-a-s] - p stands for () , e stands for exponents , m - multiplication , d - divison  lastly addtion and subtraction
+
+        double result = 3 + 4 * (7 - 5) / 2.0;
+
+
+        System.out.print(result);
+
+
 
 
 
