@@ -97,28 +97,71 @@ public class Main {
 
         // shopping cart program 
 
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
 
-        String item;
-        double price;
-        int quantity;
-        char currency = '$';
-        double total ;
+        // String item;
+        // double price;
+        // int quantity;
+        // char currency = '$';
+        // double total ;
 
-        System.out.println("What item would You like to Buy?: ") ;
-        item = scanner.nextLine();
-        System.out.println("What is the Price for Each ? : ");
-        price = scanner.nextDouble();
-        System.out.println("How much would you like to buy?: ");
-        quantity = scanner.nextInt();
+        // System.out.println("What item would You like to Buy?: ") ;
+        // item = scanner.nextLine();
+        // System.out.println("What is the Price for Each ? : ");
+        // price = scanner.nextDouble();
+        // System.out.println("How much would you like to buy?: ");
+        // quantity = scanner.nextInt();
 
-        total = price * quantity;
+        // total = price * quantity;
 
-        System.out.println("Item :" +  item + "/s");
-        System.out.println("Item's price :" +  currency + price);
-        System.out.println("Quantity :" +  quantity);
-        System.out.println("Total bill : " + currency+ total);
+        // System.out.println("Item :" +  item + "/s");
+        // System.out.println("Item's price :" +  currency + price);
+        // System.out.println("Quantity :" +  quantity);
+        // System.out.println("Total bill : " + currency+ total);
 
+
+        // scanner.close();
+
+        Scanner scanner  = new Scanner(System.in);
+        String name;
+        int age;
+        boolean Student;
+
+
+        System.out.println("What is your Name: ");
+        name = scanner.nextLine();
+        System.out.println("Enter your age : ");
+        age = scanner.nextInt();
+        System.out.println("What is your Status: ");
+        Student = scanner.nextBoolean();
+
+        if(name.isEmpty()){
+            System.out.println("You didn't enter your name");
+        }else{
+            System.out.println("Hello" + " " + name);
+        }
+        // group 2
+        if(age >= 18 & age < 65){
+            System.out.println("You are adult");
+        }
+        else if(age < 0){
+            System.out.println("You haven't Born yet");
+        }
+        else if(age >= 65){
+            System.out.println("You are senior");
+        }
+        else{
+            System.out.println("You are a Child");
+        }
+
+        //group 3
+
+        if(Student){
+            System.out.println("You are a Student");
+        }
+        else{
+            System.out.println("You are not a student");
+        }
 
         scanner.close();
 
