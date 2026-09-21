@@ -1,6 +1,6 @@
 // import java.util.Scanner;
 
-import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args){
@@ -122,48 +122,69 @@ public class Main {
 
         // scanner.close();
 
-        Scanner scanner  = new Scanner(System.in);
-        String name;
-        int age;
-        boolean Student;
+        // Scanner scanner  = new Scanner(System.in);
+        // String name;
+        // int age;
+        // boolean Student;
 
 
-        System.out.println("What is your Name: ");
-        name = scanner.nextLine();
-        System.out.println("Enter your age : ");
-        age = scanner.nextInt();
-        System.out.println("What is your Status: ");
-        Student = scanner.nextBoolean();
+        // System.out.println("What is your Name: ");
+        // name = scanner.nextLine();
+        // System.out.println("Enter your age : ");
+        // age = scanner.nextInt();
+        // System.out.println("What is your Status: ");
+        // Student = scanner.nextBoolean();
 
-        if(name.isEmpty()){
-            System.out.println("You didn't enter your name");
+        // if(name.isEmpty()){
+        //     System.out.println("You didn't enter your name");
+        // }else{
+        //     System.out.println("Hello" + " " + name);
+        // }
+        // // group 2
+        // if(age >= 18 & age < 65){
+        //     System.out.println("You are adult");
+        // }
+        // else if(age < 0){
+        //     System.out.println("You haven't Born yet");
+        // }
+        // else if(age >= 65){
+        //     System.out.println("You are senior");
+        // }
+        // else{
+        //     System.out.println("You are a Child");
+        // }
+
+        // //group 3
+
+        // if(Student){
+        //     System.out.println("You are a Student");
+        // }
+        // else{
+        //     System.out.println("You are not a student");
+        // }
+
+        // scanner.close();
+
+        Random random  = new Random();
+
+        Boolean isHead;
+        // double number2;
+        // double number3;
+
+        isHead = random.nextBoolean();
+
+        // number2 = random.nextDouble(1,100);
+
+        // number3 = random.nextDouble(1,100);
+        System.out.println(isHead);
+        // System.out.println(number2);
+        // System.out.println(number3);
+
+        if(isHead){
+            System.out.println("Heads");
         }else{
-            System.out.println("Hello" + " " + name);
+            System.out.println("Tails");
         }
-        // group 2
-        if(age >= 18 & age < 65){
-            System.out.println("You are adult");
-        }
-        else if(age < 0){
-            System.out.println("You haven't Born yet");
-        }
-        else if(age >= 65){
-            System.out.println("You are senior");
-        }
-        else{
-            System.out.println("You are a Child");
-        }
-
-        //group 3
-
-        if(Student){
-            System.out.println("You are a Student");
-        }
-        else{
-            System.out.println("You are not a student");
-        }
-
-        scanner.close();
 
 
         
