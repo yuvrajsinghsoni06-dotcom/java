@@ -1,4 +1,7 @@
 // import java.util.Scanner;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
         // Scanner scanner = new Scanner(System.in);
@@ -86,10 +89,41 @@ public class Main {
 
         // order of operation [p-e-m-d-a-s] - p stands for () , e stands for exponents , m - multiplication , d - divison  lastly addtion and subtraction
 
-        double result = 3 + 4 * (7 - 5) / 2.0;
+        // double result = 3 + 4 * (7 - 5) / 2.0;
 
 
-        System.out.print(result);
+        // System.out.print(result);
+
+
+        // shopping cart program 
+
+        Scanner scanner = new Scanner(System.in);
+
+        String item;
+        double price;
+        int quantity;
+        char currency = '$';
+        double total ;
+
+        System.out.println("What item would You like to Buy?: ") ;
+        item = scanner.nextLine();
+        System.out.println("What is the Price for Each ? : ");
+        price = scanner.nextDouble();
+        System.out.println("How much would you like to buy?: ");
+        quantity = scanner.nextInt();
+
+        total = price * quantity;
+
+        System.out.println("Item :" +  item + "/s");
+        System.out.println("Item's price :" +  currency + price);
+        System.out.println("Quantity :" +  quantity);
+        System.out.println("Total bill : " + currency+ total);
+
+
+        scanner.close();
+
+
+        
 
 
 
