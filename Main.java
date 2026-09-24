@@ -205,33 +205,93 @@ public class Main {
 
         // System.out.println(result);
 
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
 
-        //excercise -1
-        double a;
-        double b;
-        double c;
+        // //excercise -1
+        // double a;
+        // double b;
+        // double c;
         
 
-        System.out.println("Enter the value for A: ");
-        a = scanner.nextDouble();
+        // System.out.println("Enter the value for A: ");
+        // a = scanner.nextDouble();
 
-        System.out.println("Enter the value for B : ");
-        b = scanner.nextDouble();
+        // System.out.println("Enter the value for B : ");
+        // b = scanner.nextDouble();
 
-        a = Math.pow(a,2);
-        b = Math.pow(b,2);
+        // a = Math.pow(a,2);
+        // b = Math.pow(b,2);
 
-        c = Math.sqrt(a + b);
+        // c = Math.sqrt(a + b);
 
         
         
-        ;
+        // ;
         
 
-        System.out.println("Area of Right Angle triangle is: " + " " +  c);
+        // System.out.printf("The hypotenuse is: %.1f cm", c);
 
-        scanner.close();
+        // scanner.close();
+
+
+        // print f statement - used to format outputa
+
+        //syntax - %[flags][width][.percision][specifier-character]
+
+        // flags - 
+        // + = output a plus
+        // , = comma grouping separator
+        // ( = neg numbers are enclosed in ()
+        // space - display a minus if negive space if positive
+
+        // String name = "Khush"; // use s
+        // char firstLetter = 'K';  // use c
+        // int age = 21;   // use d 
+        // double height = 60.5;  // use = f
+        // boolean isEmployeed = true;  // use = b
+
+        // System.out.printf("Hello %s\n", name);
+        // System.out.printf("Your Name starts with  %c\n", firstLetter);
+        // System.out.printf("You are  %d years old\n", age);
+        // System.out.printf("You are %f inches tall\n", height);
+        // System.out.printf("Employee : %b\n", isEmployeed);
+
+
+        // System.out.printf("%s is %d years old", name , age);
+
+
+
+        // double price1 = 9.99;
+        // double price2 = -19.99;
+        // double price3 = 999.99;
+
+        // System.out.printf("% .2f\n",price1);
+        // System.out.printf("% .2f\n",price2);
+        // System.out.printf("% .3f\n",price3);
+
+
+        int id1 =1;
+        int id2 =23;
+        int id3 =456;
+        int id4 =7890;
+
+
+        System.out.printf("%-4d\n", id1);
+        System.out.printf("%-4d\n", id2);
+        System.out.printf("%-4d\n", id3);
+        System.out.printf("%-4d\n", id4);
+
+
+
+
+        
+
+
+
+
+
+
+
 
 
 
