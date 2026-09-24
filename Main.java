@@ -270,16 +270,54 @@ public class Main {
         // System.out.printf("% .3f\n",price3);
 
 
-        int id1 =1;
-        int id2 =23;
-        int id3 =456;
-        int id4 =7890;
+        // int id1 =1;
+        // int id2 =23;
+        // int id3 =456;
+        // int id4 =7890;
 
 
-        System.out.printf("%-4d\n", id1);
-        System.out.printf("%-4d\n", id2);
-        System.out.printf("%-4d\n", id3);
-        System.out.printf("%-4d\n", id4);
+        // System.out.printf("%-4d\n", id1);
+        // System.out.printf("%-4d\n", id2);
+        // System.out.printf("%-4d\n", id3);
+        // System.out.printf("%-4d\n", id4);
+
+
+        // compound intrest calculator
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        double principle;
+        double rate;
+        int timescompounded;
+        int years;
+        double amount;
+
+        System.out.println("Enter the principle Amount: ");
+        principle = scanner.nextDouble();
+
+
+        System.out.println("Enter the principle Rate: ");
+        rate = scanner.nextDouble() / 100;
+        
+        System.out.println("Enter the Timecomponent: ");
+        timescompounded = scanner.nextInt();
+
+        System.out.println("Enter the principle Year: ");
+        years = scanner.nextInt();
+
+
+        amount = principle * Math.pow(1 + rate/timescompounded , years * timescompounded);
+
+
+        System.out.printf("Your Amount after %d years is $%.2f", years, amount);
+       
+
+
+
+
+
+        scanner.close();
 
 
 
